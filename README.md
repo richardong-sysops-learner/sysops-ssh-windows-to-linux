@@ -16,9 +16,11 @@ running in VirtualBox using SSH and SCP.
 ---
 
 ## Problem Statement
-Initial SSH attempts failed due to VM networking isolation.
-Later SCP file transfers failed due to executing Windows paths
+- Initial SSH attempts failed due to VM networking isolation.
+- Later SCP file transfers failed due to executing Windows paths
 from a Linux environment.
+
+![SSH Error](screenshots/ssh-error.png)
 
 ---
 
@@ -35,6 +37,8 @@ from a Linux environment.
 - Verified port 22 listening
 - Executed SCP from Windows PowerShell
 
+![SSH Success](screenshots/ssh-success.png)
+
 ---
 
 ## Final Commands
@@ -44,3 +48,5 @@ from a Linux environment.
 
 ### SCP (Transfer file from Windows → Linux VM)
 ```bash scp "C:\Users\PC\Documents\Profile\Career\TikTok.jpg" richard@192.168.56.101:/home/richard/Documents/```
+
+![SCP Transfer](screenshots/scp-transfer.png)
